@@ -36,6 +36,10 @@ header > p > a {
     color: white;
 }
 
+header > p > a:hover {
+    text-decoration: underline;
+}
+
 header img{
     width: 180px;
     position: absolute;
