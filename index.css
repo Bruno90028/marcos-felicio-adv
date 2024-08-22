@@ -18,19 +18,37 @@ body {
 }
 
 header {
+    position: relative;
     height: 210px;
     background-image: linear-gradient(to bottom, var(--cor4), black);
 }
 
+header > p {
+    position: relative;
+    color: white;
+    text-align: right;
+    padding: 15px;
+}
+
+header > p > a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
 header img{
     width: 180px;
-    display: block;
-    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
 }
 
 nav {
     text-align: center;
     background-color: black;
+    padding-top: 5px;
     padding-bottom: 4px;
 }
 
@@ -41,13 +59,18 @@ nav a {
     padding-right: 10px;
     padding-bottom: 4.5px;
     padding-top: 4.5px;
-    border-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
     color: #626585;
 }
 
 nav a:hover {
     background-color: #636ab8;
     color: #222333;
+}
+
+nav a:active{
+    color: white;
 }
 
 div.linha {
