@@ -19,7 +19,7 @@ body {
 
 header {
     position: relative;
-    height: 210px;
+    height: 200px;
     background-image: linear-gradient(to bottom, var(--cor4), black);
 }
 
@@ -34,6 +34,7 @@ header > p > a {
     position: relative;
     text-decoration: none;
     color: white;
+    text-shadow: 1px 1px 0px black;
 }
 
 header > p > a:hover {
@@ -44,7 +45,7 @@ header img{
     width: 180px;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 40%;
 
     transform: translate(-50%, -50%);
 }
@@ -83,22 +84,51 @@ div.linha {
     box-shadow: 1px 1px 23px black;
 }
 
-main {
-    height: calc(100vh - 216px - 30px - 6px);
-    position: relative;
+main section {
+    height: 600px;
 }
 
-main > h1{
+main section#apresentacao {
+    position: relative;
+    background-image: url('images/banner.jpg');
+    background-size: cover;
+    background-position: right top;   
+}
+
+section#apresentacao > div {
+    background-color: rgba(34, 35, 51, 0.764);
+    max-width: 400px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 1.2em;
+
     position: absolute;
-    color: white;
-    font-weight: bold;
+    top: 20%;
+}
+
+section#apresentacao div h2 {
     text-align: center;
-    text-shadow: 0px 0px 2px black;
+    color: white;
+}
 
-    top: 50%;
-    left: 50%;
+section#apresentacao div p {
+    text-indent: 20px;
+    margin-top: 20px;
+    text-align: justify;
+    color: white;
+}
 
-    translate: -50% -50%;
+section#associacao {
+    background-color: rgba(0, 0, 0, 0.504);
+}
+
+
+main section.texto {
+    background-color: var(--cor2);
 }
 
 footer {
