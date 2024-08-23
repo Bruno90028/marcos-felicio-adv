@@ -19,7 +19,7 @@ body {
 
 header {
     position: relative;
-    height: 210px;
+    height: 200px;
     background-image: linear-gradient(to bottom, var(--cor4), black);
 }
 
@@ -45,7 +45,7 @@ header img{
     width: 180px;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 40%;
 
     transform: translate(-50%, -50%);
 }
@@ -89,9 +89,37 @@ main section {
 }
 
 main section#apresentacao {
+    position: relative;
     background-image: url('images/banner.jpg');
     background-size: cover;
-    background-position: right top;    
+    background-position: right top;   
+}
+
+section#apresentacao > div {
+    background-color: rgba(34, 35, 51, 0.764);
+    max-width: 400px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 1.2em;
+
+    position: absolute;
+    top: 20%;
+}
+
+section#apresentacao div h2 {
+    text-align: center;
+    color: white;
+}
+
+section#apresentacao div p {
+    text-indent: 20px;
+    margin-top: 20px;
+    text-align: justify;
+    color: white;
 }
 
 main section.texto {
