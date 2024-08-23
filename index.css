@@ -105,6 +105,7 @@ section#apresentacao > div {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     font-size: 1.2em;
+    box-shadow: 1px 1px 15px black;
 
     position: absolute;
     top: 20%;
