@@ -101,7 +101,7 @@ section#apresentacao > div {
     padding: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 20%;
+    padding-left: 15%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     font-size: 1.2em;
@@ -121,6 +121,11 @@ section#apresentacao div p {
     text-align: justify;
     color: white;
 }
+
+section#associacao {
+    background-color: rgba(0, 0, 0, 0.504);
+}
+
 
 main section.texto {
     background-color: var(--cor2);
