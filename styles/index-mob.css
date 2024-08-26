@@ -107,8 +107,8 @@ main section#apresentacao {
 section#apresentacao > div {
     position: absolute;
     background-color: rgba(34, 35, 51, 0.764);
-    max-width: 400px;
-    max-height: 500px;
+    width: 400px;
+    max-height: 550px;
     padding: 20px;
     border-radius: 15px;
     font-size: 1.2em;
