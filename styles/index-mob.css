@@ -107,6 +107,8 @@ main section#apresentacao {
 section#apresentacao > div {
     position: absolute;
     background-color: rgba(34, 35, 51, 0.764);
+    max-width: 400px;
+    max-width: 500px;
     padding: 20px;
     border-radius: 15px;
     font-size: 1.2em;
@@ -139,6 +141,15 @@ section#associacao {
 
 main section.texto {
     background-color: var(--cor2);
+}
+
+main section.texto h2 {
+    padding-top: 25px;
+}
+
+main section.texto h2, h3 {
+    color: white;
+    text-align: center;
 }
 
 footer {
