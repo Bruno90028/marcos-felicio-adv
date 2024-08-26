@@ -120,14 +120,16 @@ section#apresentacao > div {
 
 section#apresentacao div h2 {
     text-align: center;
-    color: white;
+    color: rgb(226, 226, 226);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.308);
 }
 
 section#apresentacao div p {
     text-indent: 20px;
     margin-top: 20px;
     text-align: justify;
-    color: white;
+    color: rgb(226, 226, 226);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.308);
 }
 
 section#associacao {
