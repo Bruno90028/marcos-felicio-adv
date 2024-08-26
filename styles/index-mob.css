@@ -105,19 +105,18 @@ main section#apresentacao {
 }
 
 section#apresentacao > div {
+    position: absolute;
     background-color: rgba(34, 35, 51, 0.764);
-    max-width: 400px;
-    padding: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 15%;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    padding: 20px;
+    width: 400px;
+    border-radius: 15px;
     font-size: 1.2em;
     box-shadow: 1px 1px 15px black;
 
-    position: absolute;
-    top: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
 section#apresentacao div h2 {
