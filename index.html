@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcos Felício Advocacia</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles/index-mob.css">
+    <link rel="stylesheet" href="styles/index-all.css">
+
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">    
 </head>
-<body>
+<body onresize="mudoutamanho()">
     <header>
         <p><a href="#">Login</a> | <a href="#">Associe-se</a></p>
         <img src="images/Marcos Felício.png" alt="Logotipo">
     </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Áreas de atuação</a>
-        <a href="#">Sobre nós</a>
-        <a href="#">Contato</a>
-    </nav>
+    
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+
+    <menu id="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Áreas de atuação</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Contato</a></li>
+            <li class="menumob"><a href="#"><span class="material-symbols-outlined">login</span> Login</a></li>
+            <li class="menumob"><a href="#"><span class="material-symbols-outlined">person_add</span> Associe-se</a></li>
+        </ul>
+    </menu>
     <div class="linha"></div>
     <main>
         <section id="apresentacao">
@@ -45,5 +55,24 @@
     <footer>
         <p>Repositório remoto para visualização dos nobres colegas.</p>
     </footer>
+
+    <script>
+        function mudoutamanho() {
+            if (window.innerWidth >=768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (menu.style.display == 'block'){
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+
 </body>
 </html>
