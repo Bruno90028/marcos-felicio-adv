@@ -110,7 +110,10 @@ main section#banner a {
     text-align: center;
     font-weight: bold;
     font-size: 1.2em;
-    padding: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
     width: 180px;
     background-color: #00BB2D;
     border-radius: 25px;
@@ -122,6 +125,11 @@ main section#banner a {
     left: 50%;
 
     transform: translate(-50%, -50%);
+}
+
+main section#banner img {
+    width: 20%;
+    transform: translate(-20%, 30%);
 }
 
 main section#banner a:hover {
@@ -144,6 +152,37 @@ main section#associacao h2, h3{
     color: white;
 }
 
+main section#associacao article {
+    margin: auto;
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+    width: 400px;
+}
+
+main section#associacao article h4{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: var(--cor3);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+main section#associacao article ul{
+    padding-top: 10px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    list-style-position: inside;
+    list-style-type: circle;
+    background-color: var(--cor2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
+}
+
 main section#especialidades{
 }
 
@@ -153,12 +192,16 @@ main section#apresentacao {
 
 #apresentacao h2 {
     text-align: center;
-    padding: 10px;
+    padding: 30px;
 }
 
 #apresentacao p {
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    text-align: justify;
     text-indent: 20px;
-    padding: 20px;
+    max-width: 500px;
 }
 
 main section#agendamento{
