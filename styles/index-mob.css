@@ -157,14 +157,14 @@ main section#associacao article {
     text-align: center;
     display: block;
     margin-top: 30px;
-    width: 400px;
+    width: 380px;
 }
 
 main section#associacao article h4{
     text-align: center;
     color: white;
     padding: 10px;
-    background-color: var(--cor3);
+    background-color: #54555c;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -179,11 +179,70 @@ main section#associacao article ul{
     border-bottom-right-radius: 15px;
     list-style-position: inside;
     list-style-type: circle;
-    background-color: var(--cor2);
+    background-color: #d2d4d88e;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
 }
 
-main section#especialidades{
+.mais {
+    margin-top: 50px;
+    font-size: 1em;
+    text-align: right;
+    margin-right: 5%;
+}
+
+section#associacao > h3 > a {
+    color: white;
+    text-decoration: none;
+}
+
+section#associacao > h3 > a:hover {
+    text-decoration: underline;
+}
+
+main section#especialidades {
+}
+
+main section#especialidades h2 {
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+}
+
+#especialidades article {
+    margin-top: 30px;
+    padding-left: 50px;
+}
+
+#especialidades ul {
+    color: white;
+    list-style-position: inside;
+    columns: 2;
+}
+
+#especialidades p {
+    color: white;
+    margin-top: 30px;
+    padding-left: 20px;
+    text-indent: 20px;
+}
+
+#conhecer {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+#especialidades a {
+    color: white;
+    text-decoration: none;
+    background-color: var(--cor2);
+    padding: 25px;
+    border-radius: 30px;
+}
+
+#especialidades a:hover {
+    background-color: var(--cor3);
+    color: var(--cor4);
 }
 
 main section#apresentacao {
@@ -198,17 +257,42 @@ main section#apresentacao {
 #apresentacao p {
     display: block;
     margin: auto;
-    padding-top: 10px;
+    padding: 10px;
     text-align: justify;
     text-indent: 20px;
     max-width: 500px;
 }
 
-main section#agendamento{
+main section#agendamento {
+    height: 300px;
+    position: relative;
+}
+
+main section#agendamento h2 {
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+main section#agendamento p {
+    display: block;
+    color: white;
+    margin: auto;
+    padding: 10px;
+    text-align: justify;
+    text-indent: 20px;
+    max-width: 500px;
+}
+
+#botao {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 footer {
-    height: 27px;
+    height: 300px;
     background-color: black;
     color: var(--cor2);
 }
