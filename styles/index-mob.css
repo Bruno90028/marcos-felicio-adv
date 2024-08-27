@@ -93,16 +93,13 @@ div.linha {
     box-shadow: 1px 1px 23px black;
 }
 
-main section {
-    height: 600px;
-}
-
 main section#banner {
     position: relative;
     background-image: url('../images/banner.jpg');
     background-size: cover;
     background-position: right top;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.438);
+    height: 600px;
 }
 
 main section#banner a {
@@ -141,6 +138,7 @@ main section#banner a:hover {
 
 main section#associacao {
     background-color: rgba(0, 0, 0, 0.504);
+    height: 520px;
 }
 
 main section#associacao h2 {
@@ -200,6 +198,7 @@ section#associacao > h3 > a:hover {
 }
 
 main section#especialidades {
+    height: 500px;
 }
 
 main section#especialidades h2 {
@@ -249,6 +248,10 @@ main section#apresentacao {
     background-color: rgb(221, 221, 221);
 }
 
+section#apresentacao > div#texto {
+    display: block;
+}
+
 #apresentacao h2 {
     text-align: center;
     padding: 30px;
@@ -261,6 +264,16 @@ main section#apresentacao {
     text-align: justify;
     text-indent: 20px;
     max-width: 500px;
+}
+
+section#apresentacao > div#imagem {
+    display: block;
+    background-image: url('../images/tecnologia.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.438);
+    height: 310px;
 }
 
 main section#agendamento {
@@ -292,13 +305,33 @@ main section#agendamento p {
 }
 
 footer {
-    height: 300px;
     background-color: black;
-    color: var(--cor2);
+    color: rgb(116, 114, 114);
+    text-align: center;
 }
 
-footer p{
+footer > div > h5{
+    color: rgb(173, 171, 171);
+}
+
+footer div {
+    padding-top: 20px;
+}
+
+footer a {
+    color: rgb(116, 114, 114);
+    text-decoration: none;
+}
+
+footer > div > p{
     text-align: center;
-    padding-top: 3px;
+    padding-top: 10px;
+    font-size: 0.8em;
+}
+
+footer > p{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 0.8em;
 }
