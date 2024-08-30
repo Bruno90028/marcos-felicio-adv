@@ -6,8 +6,16 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
     
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    
+}
+
+@media screen and (min-width: 992px) {
+
 }

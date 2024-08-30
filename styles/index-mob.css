@@ -218,7 +218,7 @@ main section#especialidades h2 {
     columns: 2;
 }
 
-#especialidades p {
+#especialidades > p#indent {
     color: white;
     margin-top: 30px;
     padding-left: 20px;
@@ -228,7 +228,7 @@ main section#especialidades h2 {
 #conhecer {
     text-align: center;
     font-weight: bold;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 
 #especialidades a {
@@ -246,10 +246,6 @@ main section#especialidades h2 {
 
 main section#apresentacao {
     background-color: rgb(221, 221, 221);
-}
-
-section#apresentacao > div#texto {
-    display: block;
 }
 
 #apresentacao h2 {
@@ -332,6 +328,7 @@ footer > div > p{
 footer > p{
     text-align: center;
     padding-top: 20px;
+    padding: 5px;
     padding-bottom: 20px;
     font-size: 0.8em;
 }
