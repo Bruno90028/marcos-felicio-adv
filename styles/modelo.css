@@ -18,9 +18,9 @@ body {
  }
 
 header {
-    background-color: black;
     position: relative;
     height: 130px;
+    background-image: linear-gradient(to bottom, var(--cor4), black);
 }
 
 header img {
