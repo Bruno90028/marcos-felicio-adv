@@ -254,7 +254,7 @@ main section#apresentacao {
 }
 
 #apresentacao p {
-    display: block;
+    /*display: block;*/
     margin: auto;
     padding: 10px;
     text-align: justify;

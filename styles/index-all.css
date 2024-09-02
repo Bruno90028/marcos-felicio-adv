@@ -2,20 +2,155 @@
 
 /*Outra mídias*/
 
-/* Extra small devices (phones, 600px and down) */
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
-
-@media screen and (min-width: 600px) and (max-width: 768px) {
-    
-}
+/* Pequenas telas e celular - até 768px*/
+/* tablets 768px a 992px */
+/* Desktops 992px a 1200px */
+/* Grandes Telas - 1200px*/
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
-    
+    header > p {
+        display: block;
+    }
+
+    menu {
+        display: block;
+        background-color: black;
+    }
+
+    menu ul {
+        text-align: center;
+    }
+
+    menu li {
+        display: inline-block;
+    }
+
+    menu a {
+        display: inline-block;
+        border-top: none;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+
+    span#burguer {
+        display: none;
+    }
+
+    li.menumob {
+        display: none;
+    }   
+
+    main section#especialidades article {
+        margin: auto;
+        display: block;
+        margin-top: 30px;
+        width: 500px;
+    }
+
+    section#especialidades > p#indent {
+        text-align: center;
+    }
+
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    header > p {
+        display: block;
+    }
+
+    menu {
+        display: block;
+        background-color: black;
+    }
+
+    menu ul {
+        text-align: center;
+    }
+
+    menu li {
+        display: inline-block;
+    }
+
+    menu a {
+        display: inline-block;
+        border-top: none;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+
+    span#burguer {
+        display: none;
+    }
+
+    li.menumob {
+        display: none;
+    }   
+
+    main section#especialidades article {
+        margin: auto;
+        display: block;
+        margin-top: 30px;
+        width: 500px;
+    }
+
+    section#especialidades > p#indent {
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    header > p {
+        display: block;
+    }
+
+    menu {
+        display: block;
+        background-color: black;
+    }
+
+    menu ul {
+        text-align: center;
+    }
+
+    menu li {
+        display: inline-block;
+    }
+
+    menu a {
+        display: inline-block;
+        border-top: none;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+
+    span#burguer {
+        display: none;
+    }
+
+    li.menumob {
+        display: none;
+    }   
+
+    main section#especialidades article {
+        margin: auto;
+        display: block;
+        padding-left: 20%;
+        margin-top: 30px;
+        width: 800px;
+    }
+
+    section#especialidades > p#indent {
+        text-align: center;
+    }
+
+    footer div {
+        display: inline-block;
+        padding: 20px;
+        padding-left: 40px;
+    }
 
 }
