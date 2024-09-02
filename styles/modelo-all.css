@@ -9,10 +9,6 @@
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
-    header > p {
-        display: block;
-    }
-
     menu {
         display: block;
         background-color: black;
@@ -35,31 +31,12 @@
 
     span#burguer {
         display: none;
-    }
-
-    li.menumob {
-        display: none;
-    }   
-
-    main section#especialidades article {
-        margin: auto;
-        display: block;
-        margin-top: 30px;
-        width: 500px;
-    }
-
-    section#especialidades > p#indent {
-        text-align: center;
     }
 
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 
-    header > p {
-        display: block;
-    }
-
     menu {
         display: block;
         background-color: black;
@@ -82,21 +59,6 @@
 
     span#burguer {
         display: none;
-    }
-
-    li.menumob {
-        display: none;
-    }   
-
-    main section#especialidades article {
-        margin: auto;
-        display: block;
-        margin-top: 30px;
-        width: 500px;
-    }
-
-    section#especialidades > p#indent {
-        text-align: center;
     }
 
     footer div {
@@ -110,10 +72,6 @@
 
 @media screen and (min-width: 1200px) {
 
-    header > p {
-        display: block;
-    }
-
     menu {
         display: block;
         background-color: black;
@@ -138,22 +96,7 @@
         display: none;
     }
 
-    li.menumob {
-        display: none;
-    }   
-
-    main section#especialidades article {
-        margin: auto;
-        display: block;
-        padding-left: 20%;
-        margin-top: 30px;
-        width: 800px;
-    }
-
-    section#especialidades > p#indent {
-        text-align: center;
-    }
-
+ 
     footer div {
         display: inline-block;
         padding: 20px;
