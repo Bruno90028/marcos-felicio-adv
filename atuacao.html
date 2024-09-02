@@ -9,10 +9,48 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/modelo.css">
 
+    <script src="script/atuacao.js"></script>
+
     <style>
         h1 {
             text-align: center;
             padding: 10px;
+        }
+
+        h2 {
+            padding: 20px;
+        }
+
+        h4 {
+            padding: 15px;
+        }
+
+        main p {
+            padding: 20px;
+            text-indent: 20px;
+            text-align: justify;
+        }
+
+        #areas {
+            height: 420px;
+        }
+
+        #seletor {
+            background-color: #626585;
+            text-align: center;
+        }
+
+        #seletor li{
+            display: inline-block;
+            padding: 15px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+
+        #seletor li:hover {
+            background-color: #222333;
+            color: white;
+            border-bottom: 1px solid white;
         }
     </style>
 
@@ -35,6 +73,32 @@
     <div class="linha"></div>
     <main>
         <h1>Áreas de Atuação</h1>
+
+        <section id="areas">
+            <h2 id="ramo">Cível (ou Direito Civil):</h2>
+            <h4>O que é?</h4>
+            <p id="explicacao">O direito cível é uma área ampla que regula as relações entre pessoas físicas e jurídicas no dia a dia. Ele abrange uma série de subáreas, como obrigações, contratos, responsabilidade civil, direito das coisas, família e sucessões. O objetivo do direito cível é estabelecer regras para garantir que essas interações sejam justas e equilibradas, protegendo os direitos individuais e coletivos.</p>
+            <h4>Exemplo</h4>
+            <p id="exemplo">Imagine que você está caminhando na calçada e uma pessoa andando de bicicleta esbarra em você, causando uma lesão. Você pode usar o direito cível para processar essa pessoa por danos morais e materiais, buscando uma compensação financeira pelo ocorrido.</p>
+        </section>
+
+        <section id="seletor">
+            <ul>
+                <li onclick="civil()">Cível</li>
+                <li onclick="contratos()">Contratos</li>
+                <li onclick="consumidor()">Consumidor</li>
+                <li onclick="criminal()">Criminal</li>
+                <li onclick="familia()">Família</li>
+                <li onclick="imobiliario()">Imobiliário</li>
+                <li onclick="militar()">Militar</li>
+                <li onclick="previdenciario()">Previdênciário</li>
+                <li onclick="sucessoes()">Sucessões</li>
+                <li onclick="trabalhista()">Trabalhista</li>
+                <li onclick="transito()">Trânsito</li>
+                <li onclick="tributario()">Tributário</li>
+            </ul>
+        </section>
+    
     </main>
     <div class="linha"></div>
     <footer>
@@ -61,5 +125,6 @@
             }
         }
     </script>
+
 </body>
 </html>
