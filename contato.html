@@ -130,15 +130,15 @@
         <h1>Contato</h1>
             <div>
                 <p>Mande-nos um e-mail e entraremos em contato com você!</p>
-                <form action="contato.php">
+                <form action="https://api.staticforms.xyz/submit" method="post" autocomplete="on">
                     <p>
-                        <input type="text" name="name" id="name" required placeholder="Nome Completo">
+                        <input type="text" name="name" id="name" required placeholder="Nome Completo" autocomplete="name">
                     </p>
                     <p>
-                        <input type="email" name="email" id="email" required placeholder="Digite seu@email">
+                        <input type="email" name="email" id="email" required placeholder="Digite seu@email" autocomplete="email">
                     </p>
                     <p>
-                        <input type="tel" name="tel" id="tel" required placeholder="Telefone com DDD">
+                        <input type="tel" name="tel" id="tel" required placeholder="Telefone com DDD" autocomplete="tel">
                     </p>
                     <p>
                         <input type="text" name="assunto" id="assunto" required placeholder="Assunto">
@@ -146,7 +146,10 @@
                     <p>
                         <textarea name="msg" id="msg" cols="30" rows="5" required placeholder="Escreva sua Mensagem..."></textarea>
                     </p>
-                    <input type="submit" id="submit" value="Enviar">
+                    <input type="submit" id="submit" value="Enviar" onclick="enviado()">
+
+                    <input type="hidden" name="accessKey" value="aee10ea6-3964-4de8-87f8-8f7b52dea6c1">
+                    <input type="hidden" name="redirectTo" value="https://bruno90028.github.io/marcos-felicio-adv/contato.html">
                 </form>
             </div>
             <div id="mapa">
@@ -178,6 +181,12 @@
             } else {
                 menu.style.display = 'block'
             }
+        }
+
+        function enviado() {
+            var nome = document.getElementById('name').value
+
+            window.alert(`Olá, ${nome}. Seu e-mail foi enviado com sucesso! Aguarde que entraremos em contato.`)
         }
     </script>
 </body>
