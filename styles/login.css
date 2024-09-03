@@ -28,10 +28,8 @@ span {
 #container {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.623);
-    height: 700px;
-    width: 90vw;
-    border-radius: 20px;
-    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
     box-shadow: 1px 1px 5px #22233365;
 
     top: 50%;
