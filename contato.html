@@ -8,11 +8,82 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/modelo.css">
+    <link rel="stylesheet" href="styles/modelo-all.css">
 
     <style>
         h1 {
             text-align: center;
             padding: 10px;
+        }
+
+        body {
+            background-color: #62658579;
+        }
+
+        main {
+            position: relative;
+            margin: auto;
+            max-width: 700px;
+            background-color: white;
+        }
+
+        main > div > p {
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        input {
+            font-size: 1.2em;
+            width: 400px;
+            padding-top: 20px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid black;
+            margin-top: 10px;
+            outline: none;
+        }
+
+        input:focus {
+            border-bottom: 2px solid #b89542;
+        }
+
+        #submit {
+            width: 70px;
+            padding: 10px;
+            background-color: #62658579;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        #submit:hover {
+            background-color: #222333;
+            color: white;
+        }
+
+        textarea {
+            font-size: 1.2em;
+            width: 400px;
+            margin-top: 30px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            outline: none;
+            border-bottom: 1px solid black;
+        }
+
+        textarea:focus {
+            border-bottom: 2px solid #b89542;
+        }
+
+        #mapa {
+            text-align: center;
+            padding: 20px;
         }
     </style>
 
@@ -35,6 +106,32 @@
     <div class="linha"></div>
     <main>
         <h1>Contato</h1>
+            <div>
+                <p>Mande-nos um e-mail e entraremos em contato com você!</p>
+                <form action="contato.php">
+                    <p>
+                        <input type="text" name="name" id="name" required placeholder="Nome Completo">
+                    </p>
+                    <p>
+                        <input type="email" name="email" id="email" required placeholder="Digite seu@email">
+                    </p>
+                    <p>
+                        <input type="tel" name="tel" id="tel" required placeholder="Telefone com DDD">
+                    </p>
+                    <p>
+                        <input type="text" name="assunto" id="assunto" required placeholder="Assunto">
+                    </p>
+                    <p>
+                        <textarea name="msg" id="msg" cols="30" rows="5" required placeholder="Escreva sua Mensagem..."></textarea>
+                    </p>
+                    <input type="submit" id="submit" value="Enviar">
+                </form>
+            </div>
+            <div id="mapa">
+                <h3>Estamos localizados aqui:</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d229.92239538693227!2d-43.36093612778123!3d-22.77434840948316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1725378037591!5m2!1spt-BR!2sbr" width="600" height="450" style="border:1px solid rgba(0, 0, 0, 0.212); margin-bottom:10px; margin-top:10px;width:480px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Avenida Automóvel Cluble, Vilar dos Teles, São João de Meriti - RJ, 26193-000 - Em frente a Agência Bradesco</p>
+            </div>
     </main>
     <div class="linha"></div>
     <footer>
