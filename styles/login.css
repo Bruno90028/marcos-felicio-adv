@@ -3,6 +3,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -14,5 +15,74 @@
 }
 
 body {
+    position: relative;
     background-image: linear-gradient(to bottom, #222333, #626585);
+    height: 100vh;
+}
+
+span {
+    padding: 20px;
+    color: white;
+}
+
+#container {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.623);
+    height: 700px;
+    width: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px #22233365;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#imagem {
+    background-image: url('../images/login.jpg');
+    background-size: cover;
+    height: 280px;
+}
+
+#formulario {
+    text-align: center;
+}
+
+#formulario > h3 {
+    margin-top: 20px;
+}
+
+input {
+    font-size: 1.3em;
+    margin-top: 30px;
+    width: 400px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.438);
+}
+
+#container > p{
+    margin-top: 40px;
+    text-align: center;
+}
+
+#submit {
+    width: 150px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: lightgray;
+}
+
+a {
+    text-decoration: none;
+    color: #222333;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
 }
