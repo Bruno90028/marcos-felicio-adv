@@ -26,12 +26,10 @@
                 <h5>**ATENÇÃO:**</h5>
                 <h5>Usuário é o CPF</h5>
                 <h5>Senha é a data de nascimento (ddmmaaaa)</h5>
-                <p><input type="text" name="user" id="user" required placeholder="Usuário"></p>
-                <p><input type="password" name="senha" id="senha" required placeholder="*********"></p>
-                <p><input type="submit" value="Entrar" id="submit"></p>
-            </div>
-            <p><a href="">Não tem uma conta? Clique aqui!</a></p>
-        </div>
-    </main>
+                <form action="login.php">
+                    <p><input type="text" name="user" id="user" required placeholder="Usuário" maxlength="11"></p>
+                    <p><input type="password" name="senha" id="senha" required placeholder="*********" maxlength="16" minlength="8"></p>
+                    <p><input type="submit" value="Entrar" id="submit"></p>
+                </form>
 </body>
 </html>
