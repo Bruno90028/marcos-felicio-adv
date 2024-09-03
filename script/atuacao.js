@@ -8,7 +8,7 @@ function civil() {
     inicio.style.display = 'none'
     areas.style.display = 'block'
 
-    titulo.innerText = 'Cível (ou Direito Civil):'
+    titulo.innerText = 'Cível (ou Civil):'
     descricao.innerText = 'O direito cível é uma área ampla que regula as relações entre pessoas físicas e jurídicas no dia a dia. Ele abrange uma série de subáreas, como obrigações, contratos, responsabilidade civil, direito das coisas, família e sucessões. O objetivo do direito cível é estabelecer regras para garantir que essas interações sejam justas e equilibradas, protegendo os direitos individuais e coletivos.'
     exemplo.innerText = 'Imagine que você está caminhando na calçada e uma pessoa andando de bicicleta esbarra em você, causando uma lesão. Você pode usar o direito cível para processar essa pessoa por danos morais e materiais, buscando uma compensação financeira pelo ocorrido.'
 }
