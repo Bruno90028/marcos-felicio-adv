@@ -1,3 +1,8 @@
+<?php
+
+include('protect.php');
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -20,20 +25,20 @@
             <li><a href="#"><img src="images/adicionar-documento.png" alt="Novo processo">Novo Processo</a></li>
             <li><a href="#"><img src="images/pergunta-de-mensagens.png" alt="Dúvidas">Dúvidas</a></li>
             <li><a href="#"><img src="images/definicoes.png" alt="Ajustes">Ajustes</a></li>
-            <li><a href="#"><img src="images/definicoes.png" alt="Ajustes">Sair</a></li>
+            <li><a href="logout.php"><img src="images/definicoes.png" alt="Sair">Sair</a></li>
         </ul>
     </nav>
     <header>
         <img src="images/clients/unnamed.png" alt="Sem Perfil">
         <span id="burguer" class="material-symbols-outlined" onclick="menu()">menu</span>
-        <h1>Olá, Cliente!</h1>
+        <h1>Olá, <?php echo $_SESSION['nome']; ?> !</h1>
     </header>
 
     <main>
         <section id="noticias">
             <article>
                 <h2>Portal de Notícias</h2>
-                <p>Olá, <strong>Cliente</strong>. Por aqui você ficará sabendo das principais notícias que dominam o mundo jurídico atualmente.</p>
+                <p>Olá, <strong><?php echo $_SESSION['nome']; ?></strong>. Por aqui você ficará sabendo das principais notícias que dominam o mundo jurídico atualmente.</p>
                 <p>Fique Ligado!</p>
             </article>
         </section>
