@@ -6,6 +6,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --cor1: #636ab8;
+    --cor2: #626585;
+    --cor3: #282f76;
+    --cor4: #222333;
+    --cor5: #b89542;
+}
+
 header {
     position: relative;
     background-color: black;
@@ -30,10 +38,100 @@ header h1 {
 }
 
 main {
-    height: calc(100vh - 25vh);
+    height: calc(100vh - 27.4vh);
+}
+
+section {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.425);
+}
+
+main section#noticias {
+    width: 400px;
+    margin: auto;
+}
+
+main section#noticias h2, h3{
+    background-color: #636ab8;
+    text-align: center;
+}
+
+main section#noticias h2 {
+    margin-top: 22px;
+    border-top-left-radius: 15px;
+}
+
+main section#noticias p {
+    padding: 15px;
+    background-color: #22233354;
+}
+
+main section#comunicado {
+    width: 400px;
+    margin: auto;
+}
+
+main section#comunicado h2{
+    background-color: #636ab8;
+    text-align: center;
+    margin-top: 22px;
+    border-top-left-radius: 15px;
+}
+
+main section#comunicado p {
+    padding: 15px;
+    background-color: #22233354;
+}
+
+main section#contato {
+    width: 400px;
+    margin: auto;
+}
+
+main section#contato h2{
+    background-color: #636ab8;
+    text-align: center;
+    margin-top: 22px;
+    border-top-left-radius: 15px;
+}
+
+main section#contato ul{
+    padding: 15px;
+    background-color: #22233354;
+    list-style: none;
+}
+main section#contato li{
+    padding-top: 15px;
 }
 
 footer {
-    background-color: lightgray;
+    background-color: #636ab8;
     height: 8vh;
+    text-align: center;
+}
+
+footer img {
+    width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -17px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.342);
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+#home {
+    width: 74px;
+}
+
+footer img:hover {
+    /*width: 68px;*/
+    border: 1px solid rgba(2, 2, 2, 0.295);
+    transform: translate(-3px , -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+    transition: tranform 0.3s
+}
+
+footer img#home:hover {
+    /*width: 78px;*/
+    
 }
