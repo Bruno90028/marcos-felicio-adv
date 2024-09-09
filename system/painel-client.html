@@ -11,10 +11,22 @@
 
 </head>
 <body>
+    <nav id="menu" onmouseleave="esconder()">
+        <img id="logo" src="../images/Marcos Felício.png" alt="logo">
+        <ul>
+            <li><a href="#"><img id="home" src="images/casa.png" alt="Home">Home</a></li>
+            <li><a href="#"><img src="images/pasta-aberta.png" alt="Meus processos">Meus processos</a></li>
+            <li><a href="#"><img src="images/adicionar-documento.png" alt="Novo processo">Novo Processo</a></li>
+            <li><a href="#"><img src="images/pergunta-de-mensagens.png" alt="Dúvidas">Dúvidas</a></li>
+            <li><a href="#"><img src="images/definicoes.png" alt="Ajustes">Ajustes</a></li>
+        </ul>
+    </nav>
     <header>
         <img src="images/clients/unnamed.png" alt="Sem Perfil">
+        <span id="burguer" class="material-symbols-outlined" onclick="menu()">menu</span>
         <h1>Olá, Cliente!</h1>
     </header>
+
     <main>
         <section id="noticias">
             <article>
@@ -44,7 +56,7 @@
         </section>
     </main>
     
-    <footer>
+    <!--<footer>
         <menu>
             <a href="#"><img src="images/pasta-aberta-cir.png" alt="Meus processos"></a>
             <a href="#"><img src="images/adicionar-documento-cir.png" alt="Novo processo"></a>
@@ -52,6 +64,20 @@
             <a href="#"><img src="images/pergunta-de-mensagens-cir.png" alt="Dúvidas"></a>
             <a href="#"><img src="images/definicoes-cir.png" alt="Ajustes"></a>
         </menu>
-    </footer>
+    </footer>-->
+
+    <script>
+        function menu () {
+            var nav = document.getElementById('menu')
+
+            nav.style.display = 'block'
+        }
+
+        function esconder () {
+            var nav = document.getElementById('menu')
+
+            nav.style.display = 'none'
+        }
+    </script>
 </body>
 </html>
