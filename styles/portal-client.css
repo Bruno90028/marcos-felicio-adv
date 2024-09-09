@@ -50,7 +50,7 @@ main section#noticias {
     margin: auto;
 }
 
-main section#noticias h2, h3{
+main section#noticias h2{
     background-color: #636ab8;
     text-align: center;
 }
@@ -110,7 +110,7 @@ footer {
 }
 
 footer img {
-    width: 60px;
+    width: 50px;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: -17px;
@@ -120,18 +120,12 @@ footer img {
 }
 
 #home {
-    width: 74px;
+    width: 65px;
 }
 
 footer img:hover {
-    /*width: 68px;*/
     border: 1px solid rgba(2, 2, 2, 0.295);
     transform: translate(-3px , -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
     transition: tranform 0.3s
-}
-
-footer img#home:hover {
-    /*width: 78px;*/
-    
 }
