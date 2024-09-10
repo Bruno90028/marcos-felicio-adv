@@ -27,6 +27,7 @@
 
                 $_SESSION['id'] = $usuario['id'];
                 $_SESSION['nome'] = $usuario['nome'];
+                $_SESSION['foto'] = $usuario['foto'];
 
                 header("Location: painel-client.php");
 

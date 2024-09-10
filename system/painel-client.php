@@ -29,7 +29,7 @@ include('protect.php');
         </ul>
     </nav>
     <header>
-        <img src="images/clients/unnamed.png" alt="Sem Perfil">
+        <img src="<?php echo $_SESSION['foto']; ?>" alt="Sem Perfil">
         <span id="burguer" class="material-symbols-outlined" onclick="menu()">menu</span>
         <h1>Olá, <?php echo $_SESSION['nome']; ?> !</h1>
     </header>
