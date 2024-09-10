@@ -25,7 +25,7 @@ include('protect.php');
             <li><a href="#"><img src="images/adicionar-documento.png" alt="Novo processo">Novo Processo</a></li>
             <li><a href="#"><img src="images/pergunta-de-mensagens.png" alt="Dúvidas">Dúvidas</a></li>
             <li><a href="#"><img src="images/definicoes.png" alt="Ajustes">Ajustes</a></li>
-            <li><a href="logout.php"><img src="images/definicoes.png" alt="Sair">Sair</a></li>
+            <li><a href="logout.php"><img src="images/sair.png" alt="Sair">Sair</a></li>
         </ul>
     </nav>
     <header>
