@@ -131,7 +131,7 @@
             <div>
                 <p>Mande-nos um e-mail e entraremos em contato com você!</p>
                 <!--<form action="https://api.staticforms.xyz/submit" method="post" autocomplete="on">-->
-                <form action="" method="post" autocomplete="on">
+                <form action="enviar-email.php" method="post" autocomplete="on">
                     <p>
                         <input type="text" name="name" id="name" required placeholder="Nome Completo" autocomplete="name">
                     </p>
