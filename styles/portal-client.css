@@ -17,7 +17,7 @@
 header {
     position: relative;
     background-color: black;
-    height: 17vh;
+    height: 19vh;
     color: white;
 }
 
@@ -41,7 +41,7 @@ header img {
 
 header h1 {
     position: absolute;
-    top: 87%;
+    top: 89%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
