@@ -57,11 +57,7 @@
         <div id="container">
             <div id="imagem">
                 
-        <a href="../index.html">
-            <span class="material-symbols-outlined">
-                arrow_back
-                </span>
-        </a>
+        <a href="../index.html"><span class="material-symbols-outlined">          arrow_back</span></a>
             </div>
             <div id="formulario">
                 <h3>Marcos Felício Advocacia</h3>

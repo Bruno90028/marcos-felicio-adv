@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/backpage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Área de Trabalho</title>
+</head>
+<body>
+    <header>
+        <div id="container">
+            <h3>Olá, Bruno!</h3>
+        </div>
+    </header>
+
+    <div id="alt" onclick="mostrarmenu()">
+        <span class="material-symbols-outlined">
+            arrow_forward_ios
+            </span>
+    </div>
+
+    <nav id="menu">
+        <span class="material-symbols-outlined" onclick="escondermenu()">arrow_back_ios</span>
+        <h5>Vs 1.0</h5>
+        <ul>
+            <li><a href="#"><span class="material-symbols-outlined">
+                home
+                </span>Início</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">
+                computer
+                </span>Administrativo</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">
+                groups
+                </span>Associações</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">
+                person
+                </span>Clientes</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">
+                    shoppingmode
+                    </span>Comercial</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">
+                account_balance
+                </span>Financeiro</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">
+                    settings
+                    </span>Gestão</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">
+                file_open
+                </span>Processos</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">logout
+                </span>Sair</a></li>
+        </ul>
+    </nav>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script>
+        function escondermenu () {
+            var menu = document.getElementById('menu')
+            var alt = document.getElementById('alt')
+
+            menu.style.display = 'none'
+            alt.style.display = 'block'
+        }
+
+        function mostrarmenu () {
+            var menu = document.getElementById('menu')
+            var alt = document.getElementById('alt')
+            
+            menu.style.display = 'block'
+            alt.style.display = 'none'
+        }
+    </script>
+</body>
+</html>

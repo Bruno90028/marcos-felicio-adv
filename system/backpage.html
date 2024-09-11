@@ -3,9 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/backpage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Área de Trabalho</title>
+
+    <style>
+        main h2, h3 {
+            text-align: center;
+        }
+        
+        section {
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 15px;
+        }
+
+        section h3 {
+            color: white;
+            background-color: black;
+        }
+
+        section p {
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table th, td {
+            height: 40px;
+            width: 80px;
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+
 </head>
 <body>
-    
+    <header>
+        <div id="container">
+            <h3>Olá, Bruno!</h3>
+        </div>
+    </header>
+
+    <div id="alt" onclick="mostrarmenu()">
+        <span class="material-symbols-outlined">
+            arrow_forward_ios
+            </span>
+    </div>
+
+    <nav id="menu">
+        <span class="material-symbols-outlined" onclick="escondermenu()">arrow_back_ios</span>
+        <h5>Vs 1.0</h5>
+        <ul>
+            <li><a href="#"><span class="material-symbols-outlined">
+                home
+                </span>Início</a></li>
+            <li><a href="adm-backpage.html"><span class="material-symbols-outlined">
+                computer
+                </span>Administrativo</a></li>
+            <li><a href="ass-backpage.html"><span class="material-symbols-outlined">
+                groups
+                </span>Associações</a></li>
+            <li><a href="clients-backpage.html"><span class="material-symbols-outlined">
+                person
+                </span>Clientes</a></li>
+                <li><a href="comercial-backpage.html"><span class="material-symbols-outlined">
+                    shoppingmode
+                    </span>Comercial</a></li>
+            <li><a href="financeiro-backpage.html"><span class="material-symbols-outlined">
+                account_balance
+                </span>Financeiro</a></li>
+                <li><a href="gest-backpage.html"><span class="material-symbols-outlined">
+                    settings
+                    </span>Gestão</a></li>
+            <li><a href="process-backpage.html"><span class="material-symbols-outlined">
+                file_open
+                </span>Processos</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">logout
+                </span>Sair</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Olá, Bruno Campos!</h2>
+        <section>
+            <h3>Notícias</h3>
+            <p>Aqui você verá as notícias da semana!</p>
+        </section>
+        <section>
+            <h3>Comunicado!</h3>
+            <p>Aqui a equipe será comunicada</p>
+        </section>
+        <section>
+            <h3>Audiências da semana</h3>
+            <table>
+                <thead>
+                    <th></th>
+                    <th>Dom</th>
+                    <th>Seg</th>
+                    <th>Ter</th>
+                    <th>Qua</th>
+                    <th>Qui</th>
+                    <th>Sex</th>
+                    <th>Sab</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>8h</th>
+                        <td></td><!--Domingo-->
+                        <td></td><!--Segunda-->
+                        <td></td><!--Terça-->
+                        <td></td><!--Quarta-->
+                        <td></td><!--Quinta-->
+                        <td></td><!--Sexta-->
+                        <td></td><!--Sábado-->
+                    </tr>
+                    <tr>
+                        <th>9h</th>
+                        <td></td><!--Domingo-->
+                        <td></td><!--Segunda-->
+                        <td></td><!--Terça-->
+                        <td></td><!--Quarta-->
+                        <td></td><!--Quinta-->
+                        <td></td><!--Sexta-->
+                        <td></td><!--Sábado-->
+                    </tr>
+                    <tr>
+                        <th>10h</th>
+                        <td></td><!--Domingo-->
+                        <td></td><!--Segunda-->
+                        <td></td><!--Terça-->
+                        <td></td><!--Quarta-->
+                        <td></td><!--Quinta-->
+                        <td></td><!--Sexta-->
+                        <td></td><!--Sábado-->
+                    </tr>
+                    <tr>
+                        <th>11h</th>
+                        <td></td><!--Domingo-->
+                        <td></td><!--Segunda-->
+                        <td></td><!--Terça-->
+                        <td></td><!--Quarta-->
+                        <td></td><!--Quinta-->
+                        <td></td><!--Sexta-->
+                        <td></td><!--Sábado-->
+                    </tr>
+                    <tr>
+                        <th>12h</th>
+                        <td></td><!--Domingo-->
+                        <td></td><!--Segunda-->
+                        <td></td><!--Terça-->
+                        <td></td><!--Quarta-->
+                        <td></td><!--Quinta-->
+                        <td></td><!--Sexta-->
+                        <td></td><!--Sábado-->
+                    </tr>
+                    <tr>
+                        <th>13h</th>
+                        <td></td><!--Domingo-->
+                        <td></td><!--Segunda-->
+                        <td></td><!--Terça-->
+                        <td></td><!--Quarta-->
+                        <td></td><!--Quinta-->
+                        <td></td><!--Sexta-->
+                        <td></td><!--Sábado-->
+                    </tr>
+                    <tr>
+                        <th>14h</th>
+                        <td></td><!--Domingo-->
+                        <td></td><!--Segunda-->
+                        <td></td><!--Terça-->
+                        <td></td><!--Quarta-->
+                        <td></td><!--Quinta-->
+                        <td></td><!--Sexta-->
+                        <td></td><!--Sábado-->
+                    </tr>
+                    <tr>
+                        <th>15h</th>
+                        <td></td><!--Domingo-->
+                        <td></td><!--Segunda-->
+                        <td></td><!--Terça-->
+                        <td></td><!--Quarta-->
+                        <td></td><!--Quinta-->
+                        <td></td><!--Sexta-->
+                        <td></td><!--Sábado-->
+                    </tr>
+                    <tr>
+                        <th>16h</th>
+                        <td></td><!--Domingo-->
+                        <td></td><!--Segunda-->
+                        <td></td><!--Terça-->
+                        <td></td><!--Quarta-->
+                        <td></td><!--Quinta-->
+                        <td></td><!--Sexta-->
+                        <td></td><!--Sábado-->
+                    </tr>
+                    <tr>
+                        <th>17h</th>
+                        <td></td><!--Domingo-->
+                        <td></td><!--Segunda-->
+                        <td></td><!--Terça-->
+                        <td></td><!--Quarta-->
+                        <td></td><!--Quinta-->
+                        <td></td><!--Sexta-->
+                        <td></td><!--Sábado-->
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h3>Frase Motivacional</h3>
+            <p>Se quiser desistir, Desista!</p>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script>
+        function escondermenu () {
+            var menu = document.getElementById('menu')
+            var alt = document.getElementById('alt')
+
+            menu.style.display = 'none'
+            alt.style.display = 'block'
+        }
+
+        function mostrarmenu () {
+            var menu = document.getElementById('menu')
+            var alt = document.getElementById('alt')
+            
+            menu.style.display = 'block'
+            alt.style.display = 'none'
+        }
+    </script>
 </body>
 </html>
