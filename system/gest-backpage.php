@@ -1,3 +1,15 @@
+<?php
+    if(isset($_POST['submit'])) {
+        include_once('conexao.php');
+
+        $noticia = $mysqli->real_escape_string($_POST['area']);
+        $data = date('d/m/Y');
+
+        $result =  mysqli_query($mysqli, "INSERT INTO noticias('noticia', 'dat') VALUES ('$noticia', '$data')");
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,6 +18,21 @@
     <link rel="stylesheet" href="../styles/backpage.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Área de Trabalho</title>
+
+    <script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>
+    <script type="text/javascript">
+        bkLib.onDomLoaded(function() { nicEditors.allTextAreas() }); // convert all text areas to rich text editor on that page
+
+        bkLib.onDomLoaded(function() {
+             new nicEditor().panelInstance('area1');
+        }); // convert text area with id area1 to rich text editor.
+
+        bkLib.onDomLoaded(function() {
+             new nicEditor({fullPanel : true}).panelInstance('area2');
+        }); // convert text area with id area2 to rich text editor with full panel.
+    </script>
+
+
     <style>
         menu {
             text-align: center;
@@ -76,23 +103,26 @@
     </nav>
     <main>
         <menu>
-            <a href="#">Comunicados</a>
-            <a href="#">Notícias</a>
+            <a href="#" onclick="comunicados()">Comunicados</a>
+            <a href="#" onclick="noticias()">Notícias</a>
             <a href="#" onclick="equipe()">Equipe</a>
         </menu>
 
         <section id="comunicados">
             <h2>comunicados</h2>
         </section>
-        <section id="noticias">
-            <h2>noticias</h2>
+        <section id="noticias" style="position: relative;">
+            <h2 style="text-align: center; margin-top: 20px;">Notícias</h2>
+            <p style="text-align: center; margin-top: 10px; margin-bottom: 20px;">Digite aqui o texto que aparecerá para <strong>todos o clientes</strong>!</p>
+            <form action="gest-backpage.php" method="post" style="text-align: center; background-color: white;">
+            <textarea name="area" id="area" style="width: calc(100vw - 205px); height: 500px;"></textarea>
+            <input type="submit" value="Enviar" style="cursor: pointer; margin-top: 20px;">
+            </form>
+
         </section>
         <section id="equipe">
             <div id="adicionar">
                 <h2>Adicionar novo membro:</h2>
-                <form action="">
-                        <input type="text" id="name" name="name" required placeholder="Nome">
-                </form>
             </div>
         </section>
     </main>
@@ -115,6 +145,27 @@
             
             menu.style.display = 'block'
             alt.style.display = 'none'
+        }
+
+        function comunicados () {
+            var equipe = document.getElementById('equipe')
+            var comunicados = document.getElementById('comunicados')
+            var noticias = document.getElementById('noticias')
+
+            equipe.style.display = 'none'
+            comunicados.style.display = 'block'
+            noticias.style.display = 'none'
+        }
+
+
+        function noticias () {
+            var equipe = document.getElementById('equipe')
+            var comunicados = document.getElementById('comunicados')
+            var noticias = document.getElementById('noticias')
+
+            equipe.style.display = 'none'
+            comunicados.style.display = 'none'
+            noticias.style.display = 'block'
         }
 
         function equipe () {
