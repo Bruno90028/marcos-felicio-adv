@@ -86,8 +86,9 @@ include('protect.php');
         var telefone = document.getElementById('telefone')
         var whatsapp = document.getElementById('whatsapp')
         var email = document.getElementById('email')
+        var associado = `<?php echo $_SESSION['associado']; ?>`
 
-        if (<?php echo $_SESSION['associado']; ?> == 'sim') {
+        if (associado == 'nao') {
             telefone.innerText = '99999-9999'
             whatsapp.innerText = '99999-9999'
             email.innerText = 'email@email'
