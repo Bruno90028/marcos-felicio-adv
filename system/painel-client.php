@@ -52,9 +52,9 @@ include('protect.php');
                 <h2>Contato</h2>
                 <p>
                     <ul>
-                        <li>Telefone: <span id="telefone">21 99999-9999</span></li>
-                        <li>Whatsapp: <span id="whatsapp">21 99999-9999</span></li>
-                        <li>E-mail: <span id="email">email@email</span></li>
+                        <li>Telefone: <span id="telefone">21 77777-7777</span></li>
+                        <li>Whatsapp: <span id="whatsapp">21 77777-7777</span></li>
+                        <li>E-mail: <span id="email">nãodeucerto@naodeucerto</span></li>
                     </ul>
                 </p>
             </article>
