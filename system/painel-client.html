@@ -38,15 +38,13 @@ include('protect.php');
         <section id="noticias">
             <article>
                 <h2>Portal de Notícias</h2>
-                <p>Olá, <strong><?php echo $_SESSION['nome']; ?></strong>. Por aqui você ficará sabendo das principais notícias que dominam o mundo jurídico atualmente.</p>
-                <p>Fique Ligado!</p>
+                <p id="pnoticias"></p>
             </article>
         </section>
         <section id="comunicado">
             <article>
                 <h2>Comunicado</h2>
-                <p>Por aqui, comunicaremos qualquer evento que precise ser repassado!</p>
-                <p>Logo, pedimos para que entre constantemente e fique sempre atento!</p>
+                <p id="pcomunicado"></p>
             </article>
         </section>
         <section id="contato">
@@ -54,9 +52,9 @@ include('protect.php');
                 <h2>Contato</h2>
                 <p>
                     <ul>
-                        <li>Telefone:</li>
-                        <li>Whatsapp:</li>
-                        <li>E-mail:</li>
+                        <li>Telefone: <span id="telefone">21 99999-9999</span></li>
+                        <li>Whatsapp: <span id="whatsapp">21 99999-9999</span></li>
+                        <li>E-mail: <span id="email">email@email</span></li>
                     </ul>
                 </p>
             </article>
@@ -78,6 +76,12 @@ include('protect.php');
 
             nav.style.display = 'none'
         }
-    </script>
+
+        var noticias = document.getElementById('pnoticias')
+        var comunicado = document.getElementById('pcomunicado')
+        
+        noticias.innerHTML = `Olá, <strong><?php echo $_SESSION['nome']; ?></strong>. Por aqui você ficará sabendo das principais notícias que dominam o mundo jurídico atualmente.`
+        comunicado.innerHTML = `Por aqui, comunicaremos qualquer evento que precise ser repassado!`
+</script>
 </body>
 </html>
