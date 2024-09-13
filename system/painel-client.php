@@ -82,6 +82,20 @@ include('protect.php');
         
         noticias.innerHTML = `Olá, <strong><?php echo $_SESSION['nome']; ?></strong>. Por aqui você ficará sabendo das principais notícias que dominam o mundo jurídico atualmente.`
         comunicado.innerHTML = `Por aqui, comunicaremos qualquer evento que precise ser repassado!`
+
+        var telefone = document.getElementById('telefone')
+        var whatsapp = document.getElementById('whatsapp')
+        var email = document.getElementById('email')
+
+        if (<?php echo $_SESSION['associado']; ?> == 'sim') {
+            telefone.innerText = '99999-9999'
+            whatsapp.innerText = '99999-9999'
+            email.innerText = 'email@email'
+        } else {
+            telefone.innerText = '88888-8888'
+            whatsapp.innerText = '88888-8888'
+            email.innerText = 'outroemail@email'
+        }
 </script>
 </body>
 </html>
